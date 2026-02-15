@@ -2,10 +2,10 @@
 
 NUMBER=$1
 
-if [ $NUMBER -gt 25 ]; then
-   echo "Given number : $NUMBER is greater than 25"
-elif [ $NUMBER -eq 25 ]; then
-   echo "Given number : $NUMBER is equal to 25"
+if [ $NUMBER -gt $2 ]; then
+   echo "Given number : $NUMBER is greater than $2"
+elif [ $NUMBER -eq $2 ]; then
+   echo "Given number : $NUMBER is equal to $2"
 else 
-   echo "Given number : $NUMBER is less than 25"
+   echo "Given number : $NUMBER is less than $2"
 fi
