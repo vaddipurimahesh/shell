@@ -17,5 +17,5 @@ LAST_NAME=Mahesh
 
 FULL_NAME="$FIRST_NAME $LAST_NAME"
 
-echo -e "Full name is: $B$FULL_NAME $N"
+echo -e "Full name is: $G$FULL_NAME $N"
 
