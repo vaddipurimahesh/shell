@@ -12,4 +12,4 @@ echo "User name is :: $USER_NAME"
 echo "Please enter your Password::"
  read -s PASSWORD
 
- echo -e "User$R password$N is :: $PASSWORD"
+ echo -e "User$R password$N is :: -s $PASSWORD"
