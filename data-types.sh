@@ -5,17 +5,23 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-NUM1=10
-NUM2=Siva
+# NUM1=10
+# NUM2=Siva
 
-SUM=$((NUM1+NUM2))
+# SUM=$((NUM1+NUM2))
 
-echo -e "Sum is:$Y $SUM $N"
+# echo -e "Sum is:$Y $SUM $N"
 
-FIRST_NAME=Vaddipuri
-LAST_NAME=Mahesh
+# FIRST_NAME=Vaddipuri
+# LAST_NAME=Mahesh
 
-FULL_NAME="$FIRST_NAME $LAST_NAME"
+# FULL_NAME="$FIRST_NAME $LAST_NAME"
 
-echo -e "Full name is: $G$FULL_NAME $N"
+# echo -e "Full name is: $G$FULL_NAME $N"
+
+#Arrays
+
+MARKS={100,99,97,92}
+echo "Marks are:${MARKS[@]}"
+
 
