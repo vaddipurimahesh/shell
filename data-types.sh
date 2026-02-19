@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NUM1=10
-NUM2=300
+FIRST_NAME=Vaddipuri
+LAST_NAME=Mahesh
 
-SUM=$((NUM1+NUM2))
+FULL_NAME=$((FIRST_NAME+LAST_NAME))
 
-echo "Sum is: $SUM"
+echo "Full name is: $FULL_NAME"
