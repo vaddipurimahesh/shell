@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NUM1=10
-NUM2=Mahesh
+NUM2=300
 
 SUM=$((NUM1+NUM2))
 
-echo "Sun is: $SUM"
+echo "Sum is: $SUM"
