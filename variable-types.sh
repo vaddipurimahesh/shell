@@ -11,4 +11,4 @@ echo "Home directory of current user: $HOME"
 echo "PID of the script: $$"
 sleep 10 &
 echo "PID of recently executed script: $!"
-echo "Exit status fof the most recent executed command: $?"
+echo "Exit status fof the most recent executed command: $@"
