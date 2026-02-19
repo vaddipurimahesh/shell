@@ -13,11 +13,11 @@ NUMBER=$1
 # else 
 #  echo "The number: $NUMBER is less than 20"
 # fi
-$2=45
-if [ $1 -gt $2 ]; then
- echo "The number: $1 is greater than $2"
-elif [ $1 -eq $2 ]; then
- echo "$1 is equal to $2"
+
+if [ $1 -gt 66 ]; then
+ echo "The number: 66 is greater than 66"
+elif [ $1 -eq 66 ]; then
+ echo "$1 is equal to 66"
 else 
- echo "The number: $1 is less than $2"
+ echo "The number: $1 is less than 66"
 fi
