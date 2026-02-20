@@ -5,7 +5,7 @@ LOGS_FOLDER="/var/log/shell-scripting"
 LOGS_FILE="/var/log/shell-scripting/$0.log"
 
 if [ $USERID -ne 0 ]; then
- echo"Please run this script with root user access"
+ echo "Please run this script with root user access"
  exit 1
 fi
 
