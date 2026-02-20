@@ -13,11 +13,11 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
     if [ $1 -ne 0 ]; then
-     echo " $2... Failed" &>> $LOGS_FILE
+     echo " $2... Failed" | tee -a $LOGS_FILE
     else
-     echo "$2... Success" &>> $LOGS_FILE
+     echo "$2... Success" | tee -a $LOGS_FILE
     fi
 }
 
 dnf install nginx -y &>> $LOGS_FILE
-VALIDATE $? "Installing nginx"
+VALIDATE $? "Installing nginx" 
