@@ -26,7 +26,7 @@ USAGE(){
 }
 
 log(){
-    echo "$(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $LOGS_FILE
+    echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $LOGS_FILE
 }
 
 if [ $# -lt 2 ]; then
