@@ -20,13 +20,13 @@ fi
 mkdir -p $LOGS_FOLDER
 
 USAGE(){
-    echo -e "$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR> [default14 days $N"
+    echo -e "$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR> <DAYS>[default 14 days] $N"
     exit 1
 
 }
 
 log(){
-    echo -e "$(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $LOGS_FILE
+    echo "$(date "+%Y-%m-%d %H:%M:%S") | $1" | tee -a $LOGS_FILE
 }
 
 if [ $# -lt 2 ]; then
