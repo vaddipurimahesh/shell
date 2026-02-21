@@ -59,3 +59,16 @@ else
  echo "Archieve name: $ZIP_FILE_NAME"
 find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | tar -zcvf $ZIP_FILE_NAME
 fi 
+
+if [ -f $ZIP_FILE_NAME ]; then
+ log "Archeival is ... $G SUCCESS $N"
+
+ while IFS= read -r filepath; do
+ echo "Deletinf file: $filepath"
+ rm -f $filepath
+ echo "Deleted file: $filepath"
+ done <<< $FILES
+else
+ log "Archeival is ... $R FAILED $N"
+ exit 1 
+fi 
