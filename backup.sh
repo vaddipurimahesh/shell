@@ -54,7 +54,7 @@ if [ -z "${FILES}" ]; then
  log "No files to archive... $Y Skipping $N"
 else 
  log "Files found to archieve: $FILES"
- TIMESTAMP=$(date +%F-%H:%M:%S)
+ TIMESTAMP=$(date +%F-%H-%M-%S)
  ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
  echo "Archieve name: $ZIP_FILE_NAME"
  tar -zcvf $ZIP_FILE_NAME $(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
